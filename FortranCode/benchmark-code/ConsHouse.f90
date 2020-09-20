@@ -28,9 +28,9 @@
     integer::count,iter,iAgg,iAggp,mc,mcc,iter1,exuberance
     double precision::step,lb,Hsupply,lwidth
     double precision::adiff,alamb,alamb2,exuval
-    INTEGER         :: iseed(2),isize
+    INTEGER         :: iseed(3),isize
     if(readparameters .eq. 1) then
-        count = nargs()
+        count = iargc()
         IF (count<2) THEN
 		    write(*,*) "need input parameter file name as argument if ReadParameters==1"
 		stop
@@ -74,8 +74,8 @@
     isize = 2
 
 
-    CALL RANDOM_SEED(size = isize)
-    CALL RANDOM_SEED(put = iseed)
+    ! CALL RANDOM_SEED(size = isize)
+    ! CALL RANDOM_SEED(put = iseed)
 
 
     CALL RANDOM_NUMBER(zyrand)

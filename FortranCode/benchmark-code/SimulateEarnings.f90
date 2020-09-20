@@ -34,8 +34,8 @@ double precision		:: lpynext(2),lEygreat,lEyless,lEy
 iseed(1) = 6970
 iseed(2) = 6971
 isize = 2
-CALL RANDOM_SEED(size = isize)
-CALL RANDOM_SEED(put = iseed)   
+! CALL RANDOM_SEED(size = isize)
+! CALL RANDOM_SEED(put = iseed)   
 !CALL RANDOM_NUMBER(initss1)
 !CALL RANDOM_NUMBER(initss2)
 

@@ -21,7 +21,7 @@ subroutine ComputeLOM
     do giPh=1,ngpPh
 
        Phpmat(giPh,:,:)=exp(aa0+aa1*log(Phgrid(giPh)))
-\       Phpexu(giPh,:,:)=exp(aa0p+aa1*log(Phgrid(giPh)))
+       Phpexu(giPh,:,:)=exp(aa0p+aa1*log(Phgrid(giPh)))
     enddo
 
     do giAgg=1,ngpAgg
